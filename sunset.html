@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset - Moon CSS3</title>
+    <style>
+        body {
+            background-color: lightyellow;
+            bottom: 0px;
+            overflow-y: hidden;
+            animation: sky 5.5s 2s forwards;
+        }
+        @keyframes sky {
+            50% {
+                background-color: lightskyblue;
+            }
+        }
+        .img {
+            position: absolute;
+            bottom: 0px;
+        }
+        .sun {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 1px 5px 45px 25px lightyellow;
+            left: 75%;
+            top: -5%;
+            animation: sunset 15s forwards;
+        }
+        @keyframes sunset {
+            100% {
+                transform: translateY(700px)
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="images/bg_buliding.jpg" alt="" width=100%>
+    <div class="sun"></div>
+    <div class="moon"></div>
+</body>
+</html>
