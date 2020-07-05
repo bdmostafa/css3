@@ -9,41 +9,44 @@
         .golf {
             background-image: url(images/golf_field.jpg);
             height: 1050px;
-    position: relative;
-    top: -300px;
+            position: relative;
+            top: -300px;
         }
         .golf_club {
             top: 415px;
             position: relative;
             left: 155px;
-            transition: transform .5s ease ;
+            transition: transform .5s ease-in-out;
+            transform-origin: 100% 0%;
         }
         .golf_club:hover {
-            transform: rotate(25deg);
+            transform: rotate(-25deg);
             transform-origin: 100% 0%;
         }
         .golf_ball {
             width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: ghostwhite;
-    opacity: 71%;
-    border: 3px dotted grey;
-    position: relative;
-    top: 850px;
-    left: 209px;
-    transition: transform .5s ease-in-out 1s;
-    }
+            height: 35px;
+            border-radius: 50%;
+            background-color: ghostwhite;
+            opacity: 71%;
+            border: 3px dotted grey;
+            position: relative;
+            top: 870px;
+            left: 350px;
+            transition: transform .75s ease-in-out .35s;
+        }
 
-    .golf:hover .golf_ball {
+    span:hover .golf_ball {
         transform: translate(700px, -115px);
     }
     </style>
 </head>
 <body>
     <div class="golf">
-        <div class="golf_ball"></div>
-        <img src="images/golf_club.png" alt="" class="golf_club">
+        <span>
+            <div class="golf_ball"></div>
+            <img src="images/golf_club.png" alt="" class="golf_club">
+        </span> 
     </div>
 </body>
 </html>
