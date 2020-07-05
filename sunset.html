@@ -6,14 +6,26 @@
     <title>Sunset - Moon CSS3</title>
     <style>
         body {
-            background-color: lightyellow;
+            background-color: rgb(206, 236, 255);
             bottom: 0px;
             overflow-y: hidden;
             animation: sky 5.5s 2s forwards;
         }
         @keyframes sky {
+            40% {
+                background-color: rgb(134, 204, 248);
+            }
             50% {
-                background-color: lightskyblue;
+                background-color: rgb(103, 168, 209);
+            }
+            65% {
+                background-color: rgb(68, 103, 124);
+            }
+            85% {
+                background-color: rgb(53, 82, 100);
+            }
+            100% {
+                background-color: rgb(27, 49, 63);
             }
         }
         .img {
@@ -27,7 +39,7 @@
             position: absolute;
             border-radius: 50%;
             box-shadow: 1px 5px 45px 25px lightyellow;
-            left: 75%;
+            left: 80%;
             top: -5%;
             animation: sunset 15s forwards;
         }
@@ -36,12 +48,30 @@
                 transform: translateY(700px)
             }
         }
+        .moon {
+            width: 75px;
+            height: 75px;
+            background-color: transparent;
+            position: absolute;
+            top: 5px;
+            left: 45px;
+            border-radius: 50%;
+            box-shadow: -10px 10px white;
+            opacity: 0;
+            animation: nightmoon 5s 7.5s forwards;
+        }
+        @keyframes nightmoon {
+            100% {
+                opacity: 1;
+            }
+        }
 
     </style>
 </head>
 <body>
-    <img src="images/bg_buliding.jpg" alt="" width=100%>
     <div class="sun"></div>
+    <img src="images/bg_buliding.jpg" alt="" width=100%>
+    
     <div class="moon"></div>
 </body>
 </html>
