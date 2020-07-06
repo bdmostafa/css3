@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew Transform | CSS3</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            background: blanchedalmond;
+            height: 400px;
+            align-items: center;
+        }
+        .box {
+            display: inline-block;
+            background-color: #107ad6;
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+            animation: skew 3s infinite;
+            animation-direction: alternate;
+            opacity: .6;
+            margin: 30px 5px 0px 5px;
+        }
+        @keyframes skew {
+            0% {
+            transform: skewX(20deg);
+            }
+            100% {
+            transform: skewX(-20deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

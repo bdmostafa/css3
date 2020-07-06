@@ -1,0 +1,74 @@
+<!-- Prctice in flexbox in the following sites
+https://flexboxfroggy.com/
+https://flukeout.github.io/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query | CSS3</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+        }
+        .bat {
+            border: 1px solid gray;
+            margin: 5px;
+            border-radius: 10px;
+            padding: 25px;
+        }
+        .container img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        @media (max-width: 600px) {
+            .container .bat {
+                background-color: cornflowerblue;
+            }
+            .container {
+                flex-direction: column;
+            }
+        }
+        @media (min-width: 960px) {
+            .container .bat {
+                background-color: darkcyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bat">
+            <img src="images/bat.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui ut id tenetur saepe recusandae quaerat, voluptatum necessitatibus perferendis iure ipsa repudiandae iusto sapiente, natus exercitationem ipsum earum commodi beatae?</p>
+        </div>
+        <div class="bat">
+            <img src="images/bat.jpg" alt="">
+            <p>Nobis a quam labore aut nihil, neque in accusamus! Ducimus ratione nesciunt, quae quo omnis eaque est? Asperiores mollitia modi rem, quibusdam, dignissimos, velit exercitationem harum sequi repellendus beatae voluptatibus!</p>
+        </div>
+        <div class="bat">
+            <img src="images/bat.jpg" alt="">
+            <p>Quibusdam quos autem totam aspernatur aut animi vitae provident maiores placeat quaerat possimus sapiente unde dolorum repellendus facere deleniti aperiam, accusantium optio ex inventore voluptate! Consequatur libero tempore alias animi.</p>
+        </div>
+        <div class="bat">
+            <img src="images/bat.jpg" alt="">
+            <p>Quia perferendis commodi iure ipsum odio facilis adipisci in impedit consectetur velit, quae distinctio minus praesentium sint numquam deleniti, explicabo molestiae reprehenderit eveniet vel ipsam aperiam totam optio tempore! Iure!</p>
+        </div>
+        <div class="bat">
+            <img src="images/bat.jpg" alt="">
+            <p>Laudantium, adipisci praesentium. Quis nihil animi aliquam labore, suscipit consequuntur aspernatur repudiandae harum nesciunt laudantium cupiditate itaque modi consectetur. Quaerat sunt, ut eligendi sint vel ipsa omnis cupiditate voluptas. Doloribus?</p>
+        </div>
+        <div class="bat">
+            <img src="images/bat.jpg" alt="">
+            <p>Culpa a veniam optio. Accusamus qui tempore, sed voluptatem praesentium tenetur aut cupiditate illo! Consectetur eum commodi beatae ratione, itaque adipisci non expedita sapiente nihil cumque praesentium blanditiis. Ut, numquam.</p>
+        </div>
+    </div>
+</body>
+</html>
