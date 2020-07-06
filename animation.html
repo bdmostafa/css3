@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation | CSS3</title>
+    <style>
+        .stage {
+            background-image: url(images/golf_field.jpg);
+            height: 1000px;
+            width: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -200px;
+        }
+        .ball {
+            width: 40px;
+            height: 40px;
+            background-color: greenyellow;
+            border-radius: 50%;
+            position: absolute;
+            border: 3px dotted gray;
+            left: -500px;
+        }
+        @keyframes jumping {
+            0% {
+                left: -15px;
+                top: 350px;
+                background-color: greenyellow;
+            }
+            10% {
+                left: 300px;
+                top: 750px;
+                background-color: greenyellow;
+            }
+            40% {
+                left: 630px;
+                top: 720px;
+                background-color: goldenrod;
+            }
+            65% {
+                left: 780px;
+                top: 700px;
+                background-color: rgb(187, 141, 25);
+            }
+            75% {
+                left: 890px;
+                top: 690px;
+                background-color: rgb(187, 141, 25);
+            }
+            100% {
+                left: 1050px;
+                top: 680px;
+                background-color: rgb(128, 236, 155);
+            }
+
+        }
+        .stage:hover .ball {
+            animation: jumping 3.5s ease-in-out 1s infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="stage">
+       <div class="ball"></div>
+    </div>
+</body>
+</html>
