@@ -1,7 +1,10 @@
 <!-- For CSS grid follow this site:
-    https://www.viget.com/articles/getting-started-with-css-grid-part-1/ -->
+    https://www.viget.com/articles/getting-started-with-css-grid-part-1/ 
+    https://css-tricks.com/snippets/css/complete-guide-grid/
+-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +12,107 @@
     <style>
         .grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px 5px;
         }
+
         .box {
             border: 1px solid;
+            background-color: hotpink;
+            padding: 10px;
+        }
+
+        .b {
+            grid-row: 2/span 4;
+        }
+
+        .c {
+            grid-column: 2/ 4;
+        }
+
+        .a {
+            grid-column: 2/ span 3;
+        }
+
+        .d {
+            grid-area: 4 / 3 / 7 / 5;
+        }
+
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: sidebar;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'sidebar main main main right right'
+                'sidebar main main main right right'
+                'footer footer footer footer footer footer';
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
         }
     </style>
 </head>
+
 <body>
+    <h2 align="center">Various uses of grid layout</h2>
+    <p align="center">4 rows and 4 columns using <strong>grid-template-columns: repeat(4, 1fr) </strong></p>
     <div class="grid">
         <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
+        <div class="box a">2 grid-column: 2/ span 3</div>
+        <div class="box ">3</div>
+        <div class="box b">4 grid-row: 2/span 4</div>
         <div class="box">5</div>
         <div class="box">6</div>
-        <div class="box">7</div>
+        <div class="box c">7 grid-column: 2/ 4</div>
         <div class="box">8</div>
-        <div class="box">9</div>
+        <div class="box d">9 grid-area: 4 / 3 / 7 / 5;
+            (grid-row-start: 4;
+            grid-column-start: 3;
+            grid-row-end: 7;
+            grid-column-end: 5;)</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+    </div>
+
+
+    <h2 align="center">This another naming grid layout contains 6 columns and 3 rows:</h2>
+
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Sidebar</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
     </div>
 </body>
+
 </html>
