@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position | CSS3</title>
+    <style>
+        span {
+            color: white;
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 10px;
+            display: flex;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: darkcyan;
+            border: 1px solid pink;
+            padding: 25px;
+            color: white;
+            border-radius: 10px;
+        }
+        .box-1 {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+        .box-2 {
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+        .box-3 {
+            position: relative;
+            top: 120px;
+            left: 150px;
+            z-index: 1;
+        }
+        .box-4 {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .box-5 {
+            position: absolute;
+            top: 20px;
+            left: 500px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS3 Position</h2>
+    <hr>
+    <div class="container">
+        <div class="box box-1">box-1 (Position: Absolute). No position available in parent element container <span> <br> top: 50px; <br> left: 20px; </span> </div>
+        <div class="box box-2">box-2 (Position: Relative) <span> <br> left: 100px;
+             <br> top: 100px; </span></div>
+        <div class="box box-3"> box-3 (Parent of box-4). Position: Relative
+            <span> <br> top: 120px;
+                 <br> left: 150px;
+                <br> z-index: 1; </span>
+            <div class="box box-4">box-4 (Position: Absolute). Position available in parent
+                <span> <br> top: 200px;
+                    <br> left: 200px; </span>
+            </div>
+        </div>
+        <div class="box box-5">box-5 (Position: Absolute). No position available in parent element container
+            <span> <br>  top: 20px;
+            <br>  left: 500px; </span>
+        </div>
+    </div>
+</body>
+</html>
