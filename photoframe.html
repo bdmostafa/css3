@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photoframe | CSS3</title>
     <style>
-    html {
-        background-image:linear-gradient(rgb(241, 241, 241), rgb(189, 189, 189));
-        height:100%;
+        html {
+            background-image: linear-gradient(rgb(241, 241, 241), rgb(189, 189, 189));
+            height: 100%;
         }
-    img {
-        max-height:100%;
-        max-width:100%;
-        width: 154px;
-        height: 230px;
-    }
-    .photo-album {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px;
-    }
-    .photo-frame {
-        background-color:rgba(238, 238, 238, 0.616);
-        border: solid .8vmax rgb(236, 234, 234);
-        border-bottom-color:#dfdede;
-        border-left-color:#eee;
-        border-radius:2px;
-        border-right-color:#eee;
-        border-top-color:#ddd;
-        box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
-        box-sizing:border-box;
-        height: 300px;
-        width: 250px;
-        padding:25px;
-        position:relative;
-        text-align:center;
-        margin: 10px;
-    }
-    .photo-detail {
-        position: absolute;
-        top: 25px;
-        width: 66%;
-        padding: 2px;
-        left: 37px;
-        display: none;
-        height: 81%;
-    }
-    .photo-frame:hover .photo-detail {
-        display: inline-block;
-        cursor: pointer;
-        background-color: rgba(159, 170, 9, 0.8);
-        color: honeydew;
-        font-family: sans-serif;
-    }
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            width: 154px;
+            height: 230px;
+        }
+
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+
+        .photo-frame {
+            background-color: rgba(238, 238, 238, 0.616);
+            border: solid .8vmax rgb(236, 234, 234);
+            border-bottom-color: #dfdede;
+            border-left-color: #eee;
+            border-radius: 2px;
+            border-right-color: #eee;
+            border-top-color: #ddd;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25) inset, 0 5px 10px 5px rgba(0, 0, 0, .25);
+            box-sizing: border-box;
+            height: 300px;
+            width: 250px;
+            padding: 25px;
+            position: relative;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .photo-detail {
+            position: absolute;
+            top: 25px;
+            width: 66%;
+            padding: 2px;
+            left: 37px;
+            display: none;
+            height: 81%;
+        }
+
+        .photo-frame:hover .photo-detail {
+            display: inline-block;
+            cursor: pointer;
+            background-color: rgba(159, 170, 9, 0.8);
+            color: honeydew;
+            font-family: sans-serif;
+        }
     </style>
 </head>
+
 <body>
     <section>
         <div class="photo-album">
@@ -62,74 +69,86 @@
                 <img src="images/images....jpg" alt="" />
                 <div class="photo-detail">
                     <h2>Heading</h2>
-                    <p>This is photo details section. This is normally invisible but When you take hover on img, you will see the details about that. Let's see it...!</p>
+                    <p>This is photo details section. This is normally invisible but When you take hover on img, you
+                        will see the details about that. Let's see it...!</p>
                 </div>
             </div>
             <div class="photo-frame">
                 <img src="images/Flag-bd.svg" alt="" />
                 <div class="photo-detail">
                     <h2>Heading</h2>
-                    <p>This is photo details section. This is normally invisible but When you take hover on img, you will see the details about that. Let's see it...!</p>
+                    <p>This is photo details section. This is normally invisible but When you take hover on img, you
+                        will see the details about that. Let's see it...!</p>
                 </div>
             </div>
             <div class="photo-frame">
                 <img src="images/islam.jpg" alt="" />
                 <div class="photo-detail">
                     <h2>Heading</h2>
-                    <p>This is photo details section. This is normally invisible but When you take hover on img, you will see the details about that. Let's see it...!</p>
+                    <p>This is photo details section. This is normally invisible but When you take hover on img, you
+                        will see the details about that. Let's see it...!</p>
                 </div>
             </div>
             <div class="photo-frame">
                 <img src="images/cricket_bat.png" alt="" />
                 <div class="photo-detail">
                     <h2>Heading</h2>
-                    <p>This is photo details section. This is normally invisible but When you take hover on img, you will see the details about that. Let's see it...!</p>
+                    <p>This is photo details section. This is normally invisible but When you take hover on img, you
+                        will see the details about that. Let's see it...!</p>
                 </div>
             </div>
             <div class="photo-frame">
                 <img src="images/123.jpg" alt="" />
                 <div class="photo-detail">
                     <h2>Heading</h2>
-                    <p>This is photo details section. This is normally invisible but When you take hover on img, you will see the details about that. Let's see it...!</p>
+                    <p>This is photo details section. This is normally invisible but When you take hover on img, you
+                        will see the details about that. Let's see it...!</p>
                 </div>
             </div>
             <div class="photo-frame">
                 <img src="images/193.jpg" alt="" />
                 <div class="photo-detail">
                     <h2>Heading</h2>
-                    <p>This is photo details section. This is normally invisible but When you take hover on img, you will see the details about that. Let's see it...!</p>
+                    <p>This is photo details section. This is normally invisible but When you take hover on img, you
+                        will see the details about that. Let's see it...!</p>
                 </div>
             </div>
             <div class="photo-frame">
                 <img src="images/bcb.png" alt="" />
                 <div class="photo-detail">
                     <h2>Heading</h2>
-                    <p>This is photo details section. This is normally invisible but When you take hover on img, you will see the details about that. Let's see it...!</p>
+                    <p>This is photo details section. This is normally invisible but When you take hover on img, you
+                        will see the details about that. Let's see it...!</p>
                 </div>
             </div>
             <div class="photo-frame">
                 <img src="images/dubaimarina.jpg" alt="" />
                 <div class="photo-detail">
                     <h2>Heading</h2>
-                    <p>This is photo details section. This is normally invisible but When you take hover on img, you will see the details about that. Let's see it...!</p>
+                    <p>This is photo details section. This is normally invisible but When you take hover on img, you
+                        will see the details about that. Let's see it...!</p>
                 </div>
             </div>
             <div class="photo-frame">
-                <img src="images/gothic-alphabet-modern-gothic-black-calligraphic-letters-yellow-background_15870-590.jpg" alt="" />
+                <img src="images/gothic-alphabet-modern-gothic-black-calligraphic-letters-yellow-background_15870-590.jpg"
+                    alt="" />
                 <div class="photo-detail">
                     <h2>Heading</h2>
-                    <p>This is photo details section. This is normally invisible but When you take hover on img, you will see the details about that. Let's see it...!</p>
+                    <p>This is photo details section. This is normally invisible but When you take hover on img, you
+                        will see the details about that. Let's see it...!</p>
                 </div>
             </div>
             <div class="photo-frame">
                 <img src="images/images.jpg" alt="" />
                 <div class="photo-detail">
                     <h2>Heading</h2>
-                    <p>This is photo details section. This is normally invisible but When you take hover on img, you will see the details about that. Let's see it...!</p>
+                    <p>This is photo details section. This is normally invisible but When you take hover on img, you
+                        will see the details about that. Let's see it...!</p>
                 </div>
             </div>
         </div>
-        
+
     </section>
 </body>
+
 </html>
